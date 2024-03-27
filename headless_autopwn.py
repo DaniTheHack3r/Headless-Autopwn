@@ -30,8 +30,6 @@ class HeadlessAutopwn:
     def _send_xss_payload(self):
         headers = {
             'user-agent': self._generate_xss_payload(),
-            'Accept-Encoding': 'gzip, deflate, br',
-            'Content-Type': 'application/x-www-form-urlencoded'
         }
 
         '''
