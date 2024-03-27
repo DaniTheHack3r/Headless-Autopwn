@@ -9,7 +9,6 @@ from multiprocessing import Process
 TARGET_SITE_PORT=5000
 XSS_VULNERABLE_ENDPOINT='/support'
 BASH_INJECTION_VULNERABLE_ENDPOINT='/dashboard'
-SSH_PORT=22
 
 class HeadlessAutopwn:
 
