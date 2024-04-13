@@ -1,6 +1,6 @@
-# HTB Validation Autopwn
+# HTB Headless Autopwn
 
-This is an attempt to write an autopwn for the HTB machine Validation. To reproduce this exploit successfully, you must be connected to the box through a vpn.
+This is an attempt to write an autopwn for the HTB machine Headless. To reproduce this exploit successfully, you must be connected to the box through a vpn.
 
 Steps to reproduce:
 
